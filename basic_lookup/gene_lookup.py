@@ -2,13 +2,12 @@ import sys
 sys.path.append("..")
 from helper import fetch_endpoint, fetch_endpoint_POST
 
-#http://rest.ensembl.org/lookup/symbol/human/IRAK4?content-type=application/json
-
 # A. Write a script to retrieve the gene called IRAK4 (hint: look at the endpoints
 # under Lookup) and prints the results
 # B. Using this same script, extract and print the Ensembl stable id for this gene
 # from the results received from the server
 
+# http://rest.ensembl.org/lookup/symbol/human/IRAK4?content-type=application/json
 r1 = fetch_endpoint("lookup/symbol/human/IRAK4")
 print(r1['id'])
 
