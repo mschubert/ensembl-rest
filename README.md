@@ -23,3 +23,5 @@ Sections
     ([coffee.py](variation/coffee.py))
     * Transcripts for rsID, transcript consequences and polyphen scores
     ([vep.py](variation/vep.py))
+    * Compute LD for region and distance to variant
+    ([ld.py](variation/ld.py))
