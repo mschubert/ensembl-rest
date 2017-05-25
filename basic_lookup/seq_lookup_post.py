@@ -6,8 +6,14 @@ from helper import fetch_endpoint, fetch_endpoint_POST
 
 #http://rest.ensembl.org/lookup/symbol/human/IRAK4?content-type=application/json
 
+# Fetch IRAK4 using the expand option
+
 r1 = fetch_endpoint("lookup/symbol/human/IRAK4")
 print(r1['id'])
+
+# Fetch the sequences for all the transcripts using a single
+# POST request, print the transcript sequences in fasta
+# format
 
 r2 = fetch_endpoint("lookup/id/" + r1['id'] + "?expand=1")
 
