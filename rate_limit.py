@@ -6,6 +6,8 @@ from helper import fetch_endpoint, fetch_endpoint_POST
 
 server = "http://rest.ensembl.org/"
 
+# 200: ok
+# 429: too many requests
 for i in range(50):
     r = requests.get(server+"info/ping",
             headers={ "Content-Type" : 'application/json'})
