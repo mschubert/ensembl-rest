@@ -21,3 +21,5 @@ Sections
     ([variants.py](variation/variants.py))
     * Get variants associated with a trait and the frequencies in a population
     ([coffee.py](variation/coffee.py))
+    * Transcripts for rsID, transcript consequences and polyphen scores
+    ([vep.py](variation/vep.py))

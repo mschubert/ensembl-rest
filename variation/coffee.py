@@ -22,9 +22,15 @@ for r in r1:
 #r2 = fetch_endpoint("info/variation/populations/human") # 13375 populations
 
 ids = {'ids' : [r['Variation'] for r in r1] }
-ids['pops'] = "1000GENOMES:phase_3:FIN"
 
-r3 = fetch_endpoint_POST("variation/human", data=json.dumps(ids))
+#FIXME: this does not work, but doesn't raise an error either
+#  staff created a ticket, so maybe soon?
+#ids['pops'] = 1 #"1000GENOMES:phase_3:FIN"
+
+
+#FIXME: actually look at populations here, something is wrong here
+
+r3 = fetch_endpoint_POST("variation/human?pops=1", data=json.dumps(ids))
 
 for k,v in r3.items():
     print(k, "\tminor: {minor_allele}\tfreq: {MAF}".format(**v))
