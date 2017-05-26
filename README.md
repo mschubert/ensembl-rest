@@ -30,3 +30,5 @@ Sections
     ([epigenomes.py](regulation/epigenomes.py))
     * Upstream region of gene, epigenomes where it is active, motifs, variations in motif
     ([features.py](regulation/features.py))
+    * Tissues with available eQTLs, associations in specific tissue
+    ([eqtl.py](regulation/eqtl.py))
