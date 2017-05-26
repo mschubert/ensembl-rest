@@ -28,3 +28,5 @@ Sections
 * [Regulation](regulation)
     * List epigenomes and get cell line/tissue description from EFO
     ([epigenomes.py](regulation/epigenomes.py))
+    * Upstream region of gene, epigenomes where it is active, motifs, variations in motif
+    ([features.py](regulation/features.py))
