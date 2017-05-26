@@ -2,9 +2,6 @@ import sys
 sys.path.append("..")
 from helper import fetch_endpoint, fetch_endpoint_POST
 
-# not yet merged in production instance
-ep = "http://test.rest.ensembl.org/"
-
 # Areas which influence gene expression are often found
 # upstream in close proximity of the gene start.
 
