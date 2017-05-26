@@ -25,3 +25,6 @@ Sections
     ([vep.py](variation/vep.py))
     * Compute LD for region and distance to variant
     ([ld.py](variation/ld.py))
+* [Regulation](regulation)
+    * List epigenomes and get cell line/tissue description from EFO
+    ([epigenomes.py](regulation/epigenomes.py))
