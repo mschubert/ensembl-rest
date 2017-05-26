@@ -44,4 +44,7 @@ r4 = fetch_endpoint("eqtl/tissue/human")
 r5 = fetch_endpoint("eqtl/variant_name/human/" + variant + "?statistic=p-value&tissue=Whole_Blood")
 
 df = pd.DataFrame(r5)
-print(df.loc[df['value'].astype('float') < 5e-5])
+sign = df.loc[df['value'].astype('float') < 5e-5]
+print(sign)
+
+r6 = fetch_endpoint("xrefs/id/ENSG00000154319")
